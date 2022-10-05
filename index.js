@@ -20,22 +20,25 @@ for (i = 0; i < 256; i++) {
     gridBoxes.style.minHeight = `${height}px`;
     gridBoxes.style.minWidth = `${width}px` ;
 
-    let h = Math.floor(Math.random() * 360);
-    let s = 50;
-    let l = 50;
-    let pct = "%";
-    let hsl = "hsl(" + h + ", " + s + pct + " , " + l + pct + ")";
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    let rgb = "rgb(" + r + ", " + g + ", " + b + ")";
     
-    let colorCounter = 0
+
     
-        
-        
-        
-        
+
+    
     
     gridBoxes.addEventListener('mouseover', () => {
+        gridBoxes.style.backgroundColor = rgb;
         
-        gridBoxes.style.backgroundColor = hsl;
+
+        
+        
+            
+        
+
         
     })
 
@@ -94,27 +97,14 @@ let createGrid = gridSizeButton.addEventListener('click', () => {
             
             
             gridBoxes.addEventListener('mouseover', () => {
-
-                if (gridBoxes.style.backgroundColor == ""){
-                    let color = rgb;
-                    gridBoxes.style.backgroundColor = rgb;
-                    gridBoxes.style.opacity = "0.1"
-                    return gridBoxes.style.backgroundColor;
-
-                }
+                gridBoxes.style.backgroundColor = rgb;
                 
-
+        
                 
                 
-                if ((gridBoxes.style.backgroundColor !== "") && (gridBoxes.style.opacity <= "0.9")) {
-                    gridBoxes.style.opacity = parseFloat(gridBoxes.style.opacity) + 0.1;
-                    return gridBoxes.style.backgroundColor;
                     
-                    
-                }
-
                 
-
+        
                 
             })
         }
