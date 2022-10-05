@@ -1,0 +1,76 @@
+body {
+    background-color: seagreen;
+    
+}
+.gridContainer {
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: blanchedalmond;
+}
+    
+.grid {
+    flex: 1;
+    height: 512px;
+    width: 512px;
+    margin: none;
+    padding: none;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridBoxes {
+    
+    flex: 1;
+    margin: none;
+    padding: none;
+    background-color: white;
+}
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+    
+
+
+    
+    
+    
+
+
+
+
+    
+    
+
+    
+    
+    
+    
+   
+    
+
+    
+    
+
+    
+
+
+
